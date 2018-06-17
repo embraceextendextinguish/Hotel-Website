@@ -1,0 +1,100 @@
+
+#logo {
+height: 100px;
+}
+
+#Navlinks {
+  display: block;
+  top: 0%;
+}
+.top-menu{
+  display: block;
+  clear: both;
+  height: 500px;
+
+}
+
+.inline-List>li {
+display: inline-block;
+margin: 0px 10px;
+}
+
+#submenu {
+  width: 100%;
+  padding: 10px 10px;
+  color: aliceblue;
+  background-color: rgb(32, 31, 46);
+  display: block;
+}
+
+#submenu >ul{
+  list-style-type: circle;
+  text-align: center;
+}
+
+#submenu li:before {
+  content:'\2666';
+  color: rgb(184, 156, 85);
+  font-size: 0.7em;
+  }
+
+#submenu li {
+display: inline-block;
+margin: 0px 10px;
+}
+
+
+@import url('./App.css');
+
+.navbar {
+  position         : fixed;
+  top              : 0;
+  background-color : var(--mainBackground);
+  height           : var(--navbarHeight);
+  width            : 100%;
+  padding          : 0.9em 0;
+  box-shadow       : 0 0.3em 0 var(--dropShadow);
+  z-index          : 3;
+}
+
+.navbar>ul {
+  display          : grid;
+}
+
+.navbar>ul>li {
+  text-align       : center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  clear: both;
+  margin-top: 0;
+
+  /* This was breaking the positioning-
+  not sure if this is best way to fix, but... */
+  margin-before: 0;
+  margin-after: 0;
+  padding-start: 0;
+  -moz-margin-before: 0;
+  -moz-margin-after: 0;
+  -moz-padding-start: 0;
+  -o-margin-before: 0;
+  -o-margin-after: 0;
+  -o-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+.navlink {
+  line-height      : 3em;
+  height           : 2.8em;
+}
+
+@media only screen and (max-width:500px) {
+  .navlink {
+    display        : none;
+  }
+}
+
