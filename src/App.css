@@ -1,13 +1,39 @@
 :root {
   --navbarHeight: 100px;
+  --carouselHeight: 500px;
 }
 
 body {
   font-family: sans-serif;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a:visited {
+  color: #fff;
+}
+
+.carousel {
+  height: var(--carouselHeight);
+}
+
+.carousel-content {
+  height: var(--carouselHeight);
+}
+
+.carousel-content > img {
+  object-fit: cover;
+  height: var(--carouselHeight);
 }
 
 .content {
-  max-width: 1440px;
   margin: 0 auto;
   background: #eee;
   padding: 2em;
@@ -15,33 +41,58 @@ body {
 }
 
 .contentBlock {
-  display: block;
+  display: flex;
   clear: both;
+  border-bottom: 1px solid #333;
 }
 
 .contentBlock > img {
-  display: block;
+  display: flex;
+  margin: 1em;
+  width: 100%;
 }
 
-.contentBlock:nth-child(odd) > img {
-  float: left;
-  margin-right: 1.5em;
+.contentBlock:nth-child(odd) {
+  flex-direction: row;
 }
-.contentBlock:nth-child(even) > img {
-  float: right;
-  margin-left: 1.5em;
+.contentBlock:nth-child(even) {
+  flex-direction: row-reverse;
 }
 .contentBlock p {
-  display:block;
+  display: flex;
+  text-align: justify;
+  width: 100%;
+  clear: both;
 }
 
 .separator {
-  position: relative;
+  border: 3px solid #ccd;
   clear: both;
-  border: none;
-  height: 2em;
-  margin: 2em;
-  border-bottom: 2px solid #a48027;
+  margin: 1em;
+}
+
+.socialmedia {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+.symbol {
+  display: flex;
+  position: absolute;
+  height: 0;
+  justify-content: center;
+  align-self: flex-end;
+  width: 100%;
+  clear: both;
+}
+
+.symbol > div {
+  color: rgba(0,0,0,0.6);
+  margin-top: -0.9em;
+  font-size: 2em;
+  background: #eee;
+  padding: 10px;
 }
 
 * {
@@ -65,6 +116,7 @@ body {
 
 #logo {
   height: var(--navbarHeight);
+  margin-right: 25px;
 }
 
 #Navlinks {

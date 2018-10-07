@@ -41,17 +41,16 @@ class HomePage extends Component {
       
       <div className="content">
         { this.content.map( block =>(
-            <div className="contentBlock">
-
-              <img className="blockImage" src={block.image} alt={block.text.split(" ")[0]} />
-              
-              <p>
-                <ReactMarkdown source={ block.text } />
-              </p>
-              
-              <hr className="separator" />
-
-            </div>
+              <div className="contentBlock">
+                <img className="blockImage" src={block.image} alt={block.text.split(" ")[0]} />
+                <p>
+                  <ReactMarkdown source={ block.text } />
+                </p>
+                <div className="symbol">
+                  <div>&diams;</div>
+                </div>
+                <hr className="separator" />
+              </div>
           ))
         }
       </div>

@@ -6,6 +6,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-markdown": "^3.3.3",
+    "react-responsive-carousel": "^3.1.43",
     "react-scripts": "1.1.4"
   },
   "scripts": {
@@ -13,5 +14,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
   }
 }
