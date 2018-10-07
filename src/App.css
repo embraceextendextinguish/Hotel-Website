@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
 :root {
   --navbarHeight: 100px;
   --carouselHeight: 500px;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-size: 1em;
 }
 
@@ -90,7 +92,7 @@ a:visited {
 
 .symbol > div {
   color: rgba(0,0,0,0.6);
-  margin-top: -0.9em;
+  margin-top: -0.97em;
   font-size: 2em;
   background: #eee;
   padding: 10px;
